@@ -72,6 +72,7 @@ nav a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 
 .mid-text {
@@ -108,6 +109,7 @@ p {
 }
 
 .lern-more {
+	margin: 15px 0;
 	padding: 15px 30px;
     color: white;
     background: #ff4e2e;
@@ -221,14 +223,22 @@ h5 {
 }
 
 #alfa {
-	
+	    padding-top: 6%
 	
 }
 
 .alfa a {
 	text-decoration: none;
 	color:  #808080;
+	line-height: 2;
+}
+
+
+.down-phone-container{
+	padding-top: 5%;
+	line-height: 2.5;
 	
+
 }
 
 .down-phone-container a {
@@ -245,22 +255,26 @@ h5 {
 }
 
 .coll-back {
-	padding: 10px 35px;
+	margin-top: 65px;
+}
+
+#coll-back {
+		padding: 10px 35px;
 	color: #fc557c;
 	border: 1px solid #ff4e2e;
 	font-size: 14px;
 	background-color: #F5F5F5;
-	 
+
 }
 
 #down-picture {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 10px;
+	font-size: 20px;
 
 }
-
-
 
 footer {
 	background-color: #31293c;
@@ -270,6 +284,8 @@ footer {
 
 #end {
 color: white;
+
+padding: 25px 40%;
 }
 
 
