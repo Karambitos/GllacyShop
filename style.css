@@ -20,9 +20,8 @@ html, body {
 }
 
 .container {
-	width: 1280px;
-	height: 100px;
-	margin: 0 auto;
+	width: 1100px;
+	margin: 20px auto;
 }
 
 #header {
@@ -76,11 +75,32 @@ nav a:hover {
 }
 
 .mid-text {
-	margin-left: 20%
+	margin-left: 15%
+
 }
 
 h1 {
-	font-size: 44px;
+	position: absolute;
+    font-size: 60px;
+    top: 50%;
+ }
+
+ h2 {
+	padding: 20px;
+	margin: 20px;
+ 	text-align: center;
+ 	font-size: 200%;
+}
+
+h3 {
+	color:  #696969;
+}
+
+h4 {
+	padding: 20px;
+	margin: 20px;
+ 	text-align: center;
+ 	font-size: 300%;
 }
 
 p {
@@ -97,20 +117,14 @@ p {
 }
 
 .mid-picture {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-}
-h2 {
-	padding: 20px;
-	margin: 20px;
- 	text-align: center;
- 	font-size: 200%;
+	
 }
 
 										#section1 {
 											background-color: white;
 										}
+
+
 
 
 }
@@ -129,12 +143,12 @@ h2 {
 
 	
 .lern-price {
-	padding: 15px 30px;
+	padding: 10px 30px;
     color: white;
     background: #ff4e2e;
     border: 1px solid #ff4e2e;
     outline: none;
-    margin: 0 44%;
+    margin: 15px 44%;
 
    	
 }
@@ -155,17 +169,17 @@ h2 {
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	padding: 0 5%;
+	padding: 0 8%;
 }
 
 	
 .buy {
-	padding: 15px 30px;
+	padding: 10px 30px;
     color: white;
     background: #ff4e2e;
     border: 1px solid #ff4e2e;
     outline: none;
-    margin: 0 44%;
+    margin: 15px 44%;
   	}
 
 								#section3 {
@@ -217,15 +231,19 @@ h5 {
 	
 }
 
-.down-phone-container {
+.down-phone-container a {
+	font-size: 22px;
+	color: black;
+	text-decoration: none;
+
 	
 }
 
 .down-phone-container img {
 	margin right: 5px;
-
 	    
 }
+
 .coll-back {
 	padding: 10px 35px;
 	color: #fc557c;
@@ -233,6 +251,13 @@ h5 {
 	font-size: 14px;
 	background-color: #F5F5F5;
 	 
+}
+
+#down-picture {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 }
 
 
