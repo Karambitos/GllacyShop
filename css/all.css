@@ -444,6 +444,7 @@ padding: 7.5px;
 	position: relative;
 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	
 	margin: 0 27px;
@@ -761,6 +762,7 @@ padding: 7.5px;
 
 .social{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	
 	margin: 0 27px;
