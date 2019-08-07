@@ -57,7 +57,7 @@ a {
 	text-decoration: none;
 }
 
-/*																HEADER*/
+/*												 			HEADER*/
 
 .user-navigation-conteiner {
 	flex-direction: column;
@@ -71,17 +71,14 @@ a {
     line-height: 18px;
     color: #fff;	
 
-    position: absolute; 
+    position: absolute;
+	
+	margin: 0 27px 0 27px;
+	padding: 0;
 
-	
-	margin-bottom: 0px; 
-	
 	display: flex;
 	width: 100%;
-    max-width: 1200px;
-
-    margin: 0;
-	padding: 0;	 
+    max-width: 1146px;	 
 }
 
 .navigation div {
@@ -171,14 +168,6 @@ border-bottom: 2px solid rgba(255, 255, 255, .2);;
 
 }
 
-.background-picture {
-	position: relative;
-}
-
-.swipe {
-	position: absolute;
-}
-
 .search {
  	width: 32px;
  	height: 32px;
@@ -216,14 +205,14 @@ padding: 7.5px;
 	background-position: 0 0;	
 }
 
-/*.user-button:hover path,
+.user-button:hover path,
 .user-button:focus path{
 	fill: #000;
-}*/
+}
 
 .user-button:hover,
 .user-button:focus {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .74);
 }
 
 .login-link-list {
@@ -257,13 +246,45 @@ padding: 7.5px;
 	order: 2;
 	margin-left: auto;
 }
-/*															ЗАСТАВКА */
+/*													ЗАСТАВКА */
+
+.background-picture {
+	
+	background: rgba(225, 245, 55, 0.4);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82);
+}
+
 
 .background-item {
 	list-style: none;
+	margin: 0 0 0 50px;
+	padding: 0;
+
+
+	background: rgba(235, 225, 52, 0.2);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82);
+}
+.background-picture-list {
 
 	margin: 0 27px;
+	
+
+	background: rgba(225, 245, 55, 0.4);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82);
+
 }
+.background-picture-list a{
+	text-decoration: none;
+
+	margin: 0;
+	padding: 0;
+
+	line-height: 65px;
+
+	text-align: center;
+}
+
+
 
 .promo-description-wrapper {
     position: relative;
@@ -275,10 +296,12 @@ padding: 7.5px;
 
 
 .promo-description-wrapper p {
-    font-size: 60px;
+    font-size: 58px;
     font-weight: 700;
     line-height: 60.35px;
     text-align: center;
+
+    max-width: 700px;
 
     margin: 0;
     padding: 0;
@@ -294,16 +317,6 @@ padding: 7.5px;
 
     font-weight: 600;
 }
-.background-picture-list a{
-	text-decoration: none;
-
-	margin: 0;
-	padding: 0;
-
-	line-height: 65px;
-
-	text-align: center;
-}
 
 .swipe {
 
@@ -311,7 +324,9 @@ padding: 7.5px;
 	height: 22px;
 	
 	top: 585px;
-    left: 35px;
+    left: 145px;
+
+    position: absolute;
 }
 
 .swipe-list {
@@ -334,7 +349,7 @@ padding: 7.5px;
 	height: 20px;
 }
 
-/*.swipe-options input[type="radio"]:nth-child(1) + .radio-indicator:before {
+/*.swipe-list input[type="radio"]:nth-child(1) + .radio-indicator:before {
     content: "";
 
     display: block;
@@ -346,8 +361,8 @@ padding: 7.5px;
 	
     border-radius: 50%;
     background: #fff;
-}
-*/
+}*/
+
 .swipe-options input[type="radio"] + .radio-indicator {
 
 	position: absolute;
@@ -382,7 +397,7 @@ padding: 7.5px;
     background: #fff;
 }
 
-/*															ПЕРВЫЙ БЛОК */
+/*													ПЕРВЫЙ БЛОК */
 
 .sale{
 	position: relative;
@@ -392,7 +407,7 @@ padding: 7.5px;
 	
 	margin: 0 27px;
 	margin-bottom: 35px;
-	margin-top: -425px;
+	margin-top: -455px;
 }
 
 .sale-rospberry{
@@ -471,7 +486,7 @@ padding: 7.5px;
 }
 
 
-/*															ХИТ ПРОДАЖ */
+/*													ХИТ ПРОДАЖ */
 .best-product{
     margin: 0 27px;
 }
@@ -558,7 +573,7 @@ padding: 7.5px;
 	bottom: auto;
 }
 
-/*															ПРО МАГАЗИН */
+/*													ПРО МАГАЗИН */
 .about-us h3{
 	font-family: 'Roboto medium', sans-serif;
     font-size: 24px medium;
@@ -701,7 +716,7 @@ padding: 7.5px;
 }
 
 
-/*														ПОСЛЕДНИЙ БЛОК */
+/*													ПОСЛЕДНИЙ БЛОК */
 
 .social{
 	display: flex;
@@ -800,7 +815,7 @@ padding: 7.5px;
 }
 
 
-/*																КОНТАКТЫ*/
+/*														КОНТАКТЫ*/
 .contacts {
 	width: 100%;
 	max-width: 1200px;
@@ -853,7 +868,7 @@ padding: 7.5px;
     font-weight: 800;
 }
 
-/*																ФУТЕР*/
+/*															ФУТЕР*/
 
 .footer{
 	display: flex;
@@ -983,7 +998,7 @@ padding: 7.5px;
 	top: 18px;	
 }
 
-																/*МОДАЛКА*/
+							/*МОДАЛКА*/
 
 .background-picture-list2-show {
 	display: block;
