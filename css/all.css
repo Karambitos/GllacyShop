@@ -98,9 +98,13 @@ a {
 	list-style: none;
 
 	font-size: 15px;
-
 	margin: 0;
 	padding: 0;	
+}
+
+.site-navigation-list b {
+	display: block;
+	padding: 6px 12px;
 }
 
 .navigation-conteiner {
@@ -110,9 +114,8 @@ a {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 
-	max-width: 350px;
+	max-width: 390px;
 	width: 100%;
 
 	margin-left: 24px;
@@ -129,17 +132,64 @@ a {
 	margin: 0 0 0 10px;
 }
 
-.site-navigation a{
+.catalog:before {
+	content: "";
 
-border-bottom: 2px solid rgba(255, 255, 255, .2);;
+    position: absolute;
+
+    width: 60px;
+    height: 2px;
+
+    background-color: rgba(255, 255, 255, .5);
+
+    top: 30px;
+    left: 14px;
+}
+
+.delivery {
+	position: relative;
+}
+
+.delivery:before {
+	content: "";
+
+    position: absolute;
+
+    width: 140px;
+    height: 2px;
+
+    background-color: rgba(255, 255, 255, .5);
+
+    top: 30px;
+    left: 14px;
+}
+
+.navigation-about-us {
+	position: relative;
+}
+
+.navigation-about-us:before {
+	content: "";
+
+    position: absolute;
+
+    width: 90px;
+    height: 2px;
+
+    background-color: rgba(255, 255, 255, .5);
+
+    top: 30px;
+    left: 14px;
 }
 
 .site-navigation a,
 .user-navigation a {
 	display: block;
 	padding: 2px;
-	color: #fff;	
+	color: #fff;
+	height: 32px;	
 }
+
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -183,9 +233,10 @@ padding: 7.5px;
 }
 
 .shoping-bag-list a {
-	padding: 8.5px 35px 8.5px 45px;
-
-	position: relative;
+	display: block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 8.5px 15px 8.5px 45px;
 }
 .login-link svg,
 .shoping-bag svg {
@@ -215,26 +266,11 @@ padding: 7.5px;
 	width: 92px;
 }
 .login-link-list  a{
-	position: relative;
-	padding: 8.5px 15px 8.5px 45px;
+	display: block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 8.5px 15px 8.5px 45px;
 }
-
-/*.login-link svg {
-	content: "";
-	
-	position: absolute;
-	
-	left: 15px;
-    top: 7px;
-
-	width: 20px;
-	height: 20px;
-
-	
-	background-image: url(../images/Enter.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;	
-}*/
 
 .header-contacts{
     font-size: 14px;
@@ -1007,20 +1043,83 @@ padding: 7.5px;
 
 .background-picture-list2-show {
 	display: block;
-}																
+}				
 
 
+							/*Каталог*/
+.catalog {
+	position: relative;
+}
+
+.modal-catalog-list {
+	position: absolute;	
+
+	top: 30px;
+    left: -7px;
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	width: 150px;
+	height: 171px;
+
+	background-color: #f8f7f4;
+
+	box-shadow: 0 0 14px rgba(0,0,0,30);
+
+	border-radius: 10px;
+}
 
 
+.modal-catalog .modal-catalog-item a{
+    margin: 0;
+    color: #000;
+    border: none;
+}
+
+.catalog-new a {
+	padding: 10px 0 10px 21px;
+	height: auto;
+}
+
+.catalog-new b {
+	padding: 0;
+}
 
 
+.catalog-new:before {
+	content: "";
 
+	position: absolute;
 
+	width: 130px;
+	height: 2px;
 
+	top: 36px;
+    left: 10px;
 
+	background-color: #00000014;
+}
 
+.catalog-alse a{
+	padding: 7px 0 8px 21px;
+    height: auto;
+}
 
+.modal-catalog-item a:hover { /*срезать углы рамки*/
+    background-color: #fbded7;
+    border-radius: 0;
+}
 
+.modal-catalog-item a:focus {
+	background-color: #f6b5a5;
+	border-radius: 0;
+}
+
+.modal-catalog-show {
+	display: block;
+}
 
 
 
