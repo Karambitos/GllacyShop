@@ -57,7 +57,7 @@ a {
 	text-decoration: none;
 }
 
-/*												 			HEADER*/
+/*												HEADER*/
 
 .user-navigation-conteiner {
 	flex-direction: column;
@@ -104,7 +104,7 @@ a {
 }
 
 .navigation-conteiner {
-	padding-top: 23px;
+	padding-top: 29px;
 }
 
 .site-navigation {
@@ -123,6 +123,10 @@ a {
     flex-wrap: wrap;
     max-width: 293px;
     margin-left: auto;
+}
+
+.user-navigation li {
+	margin: 0 0 0 10px;
 }
 
 .site-navigation a{
@@ -144,23 +148,19 @@ border-bottom: 2px solid rgba(255, 255, 255, .2);;
 	color: #000;
 	border-radius: 50px;
     background-color: rgba(255, 255, 255, 1);
-
     text-decoration: none;
 }
 
-.header-contacts{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 28px;
-
-    margin: 0;
-    padding: 0;
-    text-align: right;
+.site-navigation a:active,
+.site-navigation a:checked, /*Не работает*/
+.user-navigation a:active,
+.user-navigation a:checked { /*Не работает*/
+	color: #000;
+	border-radius: 50px;
+    background-color: #d07058;
+    text-decoration: none;
 }
 
-.header-contacts span{
-	font-size: 24px;
-}
 
 .user-button{
 	border-radius: 50px;
@@ -187,28 +187,23 @@ padding: 7.5px;
 
 	position: relative;
 }
-
-.shoping-bag::before {
-	content: "";
+.login-link svg,
+.shoping-bag svg {
 	
 	position: absolute;
 	
 	left: 15px;
     top: 7px;
-
-	width: 20px;
-	height: 20px;
-
-	
-	background-image: url(../images/shoping-bag.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;	
 }
-
+.user-button:hover polygon,
+.user-button:focus polygon,
+.user-button:hover circle,
+.user-button:focus circle,
 .user-button:hover path,
 .user-button:focus path{
 	fill: #000;
 }
+
 
 .user-button:hover,
 .user-button:focus {
@@ -224,7 +219,7 @@ padding: 7.5px;
 	padding: 8.5px 15px 8.5px 45px;
 }
 
-.login-link::before {
+/*.login-link svg {
 	content: "";
 	
 	position: absolute;
@@ -239,19 +234,30 @@ padding: 7.5px;
 	background-image: url(../images/Enter.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;	
-}
+}*/
 
+.header-contacts{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
 
-.header-contacts {
-	order: 2;
 	margin-left: auto;
+    padding: 0;
+    text-align: right;
 }
+
+.header-contacts a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 22px;
+}
+
 /*													ЗАСТАВКА */
 
 .background-picture {
 	
-	background: rgba(225, 245, 55, 0.4);
-	box-shadow: 0 0 0 3px rgb(234, 45, 82);
+	/*background: rgba(225, 245, 55, 0.4);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82);*/
 }
 
 
@@ -261,18 +267,17 @@ padding: 7.5px;
 	padding: 0;
 
 
-	background: rgba(235, 225, 52, 0.2);
-	box-shadow: 0 0 0 3px rgb(234, 45, 82);
+	/*background: rgba(235, 225, 52, 0.2);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82);*/
 }
 .background-picture-list {
 
 	margin: 0 27px;
 	
-
-	background: rgba(225, 245, 55, 0.4);
-	box-shadow: 0 0 0 3px rgb(234, 45, 82);
-
+/*	background: rgba(225, 245, 55, 0.4);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82);*/
 }
+
 .background-picture-list a{
 	text-decoration: none;
 
