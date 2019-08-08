@@ -4,12 +4,12 @@ var catalog_popup = document.querySelector(".modal-catalog-list");
 
 					// POPUP catalog
 
-catalog.addEventListener ("click", function (evt) {
+catalog.addEventListener ("mouseenter", function (evt) {
 	evt.preventDefault();
-	catalog_popup.add("modal-show");
+	catalog_popup.classList.add("modal-show");
 });
 
-catalog.addEventListener ("mouseleave", function (evt) {
+catalog_popup.addEventListener ("mouseleave", function (evt) {
 	evt.preventDefault();
 	catalog_popup.classList.remove("modal-show");
 });
@@ -51,7 +51,7 @@ catalog.addEventListener ("mouseleave", function (evt) {
 
 
 
-
+	
 
 
 
