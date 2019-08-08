@@ -1,5 +1,5 @@
-var catalog = document.querySelector(".catalog");
-var catalog_popup = document.querySelector(".modal-catalog");
+var catalog = document.querySelector(".JScatalog");
+var catalog_popup = document.querySelector(".modal-catalog-list");
 
 
 					// POPUP catalog
@@ -9,16 +9,16 @@ catalog.addEventListener ("click", function (evt) {
 	catalog_popup.add("modal-show");
 });
 
-catalog_popup.addEventListener ("mouseleave", function (evt) {
+catalog.addEventListener ("mouseleave", function (evt) {
 	evt.preventDefault();
-	popup.classList.remove("modal-show");
+	catalog_popup.classList.remove("modal-show");
 });
 
 
-
-
-
-
+// var catalog = document.querySelector(".JScatalog");
+// catalog.addEventListener ("click", function (evt) {
+// 	console.log ("клик");
+// });
 
 
 // var close = popup.querySelector(".JSclose");
@@ -28,24 +28,24 @@ catalog_popup.addEventListener ("mouseleave", function (evt) {
 
 
 
-link.addEventListener ("click", function (evt) {
-	evt.preventDefault();
-	popup.classList.add("modal-show");
-});
+// link.addEventListener ("click", function (evt) {
+// 	evt.preventDefault();
+// 	popup.classList.add("modal-show");
+// });
 
-close.addEventListener ("click", function (evt) {
-	evt.preventDefault();
-	popup.classList.remove("modal-show");
-	popup.classList.remove("modal-error");
-});
+// close.addEventListener ("click", function (evt) {
+// 	evt.preventDefault();
+// 	popup.classList.remove("modal-show");
+// 	popup.classList.remove("modal-error");
+// });
 
-form.addEventListener ("submit", function (evt) {
-	if (!login.value || !password.value) {
-	evt.preventDefault();
-	popup.classList.add("modal-error");
-	} 
+// form.addEventListener ("submit", function (evt) {
+// 	if (!login.value || !password.value) {
+// 	evt.preventDefault();
+// 	popup.classList.add("modal-error");
+// 	} 
 
-});
+// });
 
 
 
