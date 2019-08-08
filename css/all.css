@@ -14,6 +14,13 @@
 	max-width: 1200px;
    }
 
+.exile a:hover,
+.exile a:focus {
+	color: #ffbc9e;
+	border: none;
+	text-decoration: underline;  
+}
+
 .visually-hidden:not(focus):not(active){
 	position: absolute;
 
@@ -85,7 +92,7 @@ a {
 	
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	
 }
 
@@ -187,7 +194,7 @@ a {
 	display: block;
 	padding: 2px;
 	color: #fff;
-	height: 32px;	
+	/*height: 32px;*/	
 }
 
 
@@ -436,6 +443,23 @@ padding: 7.5px;
 
     border-radius: 50%;
     background: #fff;
+}
+
+.swipe-options input[type="radio"]:hover  + .radio-indicator:before{
+    content: "";
+
+    display: block;
+
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+	
+	top: -1px;
+    left: -2px;
+
+    border-radius: 50%;
+    background: #ffffff45;
 }
 
 /*													ПЕРВЫЙ БЛОК */
@@ -741,14 +765,9 @@ padding: 7.5px;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .08);
 }
 
-.best-product-item .best-product-list-show {
-	display: block;
-}
 .best-product-list-hidden a{
 	text-decoration: none;
 }
-
-
 
 .hidden-button {
 	position: absolute;
@@ -1041,11 +1060,10 @@ padding: 7.5px;
 	top: 18px;	
 }
 
-							/*МОДАЛКА*/
-
-.background-picture-list2-show {
+							/*МОДАЛКА*/	
+.modal-show {
 	display: block;
-}				
+}		
 
 
 							/*Каталог*/
@@ -1056,7 +1074,7 @@ padding: 7.5px;
 .modal-catalog-list {
 	position: absolute;	
 
-	top: 30px;
+	top: 45px;
     left: -7px;
 
 	list-style: none;
@@ -1119,14 +1137,149 @@ padding: 7.5px;
 	border-radius: 0;
 }
 
-.modal-catalog-show {
-	display: block;
+
+							/*ПОИСК*/
+.shoping-search {
+	position: relative;
 }
 
+.search-conteiner {
+	position: absolute;	
 
+	padding: 0;
+	margin: 0;
 
+	width: 341px;
+	height: 84px;
 
+	top: 45px;
+	right: 0;
 
+	background-color: #f8f7f4;
 
+	box-shadow: 0 0 14px rgba(0,0,0,30);
 
+	border-radius: 10px;
+}
+
+.input-search {
+	width: 310px;
+	height: 44px; 
+
+	margin: 20px 16px;
+	padding-left: 15px;
+
+	border-radius: 10px;
+
+	border: 1px solid #00000014;
+}
+
+							/*ЛИИЧНЫЙ КАБИНЕТ*/
+.login-link-list {
+	position: relative;
+}
+
+.action-privat {
+	position: absolute;	
+
+	padding: 0;
+	margin: 0;
+
+	top: 45px;
+	right: 0;
+
+	width: 278px;
+	height: 214px;
+
+	background-color: #f8f7f4;
+
+	box-shadow: 0 0 14px rgba(0,0,0,30);
+
+	border-radius: 10px;
+}
+
+.action-input {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.action-input input {
+	width: 227px;
+	height: 44px;
+
+	margin:20px 17px 0 19px;
+	padding: 0 0 0 14px;
+
+	border-radius: 10px;
+
+	border: 1px solid #00000014;
+}
+
+.submit-functions {
+	display: flex;
+}
+
+.apointment-submit {
+	margin: 2px 20px 0 19px;
+}
+
+.action-registr a{
+	color: #000;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	font-size: 13px;
+    line-height: 24px;
+
+	text-decoration: underline;
+	text-underline-position: under;	
+}
+
+.action-registr a:hover,
+.action-registr a:focus {
+	color: #e84d37;
+	background-color: transparent;  
+	text-decoration: underline;
+}
+							/*КАРЗИНА*/
+
+.shoping-bag-list {
+	position: relative;
+}
+
+.shoping-bag-modal {
+	position: absolute;	
+
+	padding: 0;
+	margin: 0;
+
+	top: 45px;
+	right: 0;
+
+	width: 539px;
+	height: 232px;
+
+	background-color: #f8f7f4;
+
+	box-shadow: 0 0 14px rgba(0,0,0,30);
+
+	border-radius: 10px;
+}
+
+.shoping-modal-list {
+	text-decoration: none;
+}
+
+.shoping-modal-list p {
+	color: #000;
+}
+
+.shoping-bag-list fieldset{
+	border: none;
+
+	padding: 0;
+	margin: 0;	
+}
 
