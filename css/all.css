@@ -1458,6 +1458,10 @@ padding: 7.5px;
 		max-width: 560px;
 	}
 
+	.sending-form {
+		max-width: 570px;
+	}
+	
 	.sending-form-in {
 		height: 210px;
 		max-width: 550px;
