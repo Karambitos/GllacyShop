@@ -811,6 +811,8 @@ padding: 7.5px;
 
 	color: #000;
 
+	margin-bottom: 20px;
+
 	max-width: 560px;
 	width: 100%;
 
@@ -1378,6 +1380,9 @@ padding: 7.5px;
 		font-size: 24px;
 	}
 
+	.social-blog{
+		margin-bottom: 0;
+	}
 	.sending-form-in {
 		height: 210px;
 	}
