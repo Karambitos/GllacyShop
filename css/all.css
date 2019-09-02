@@ -497,8 +497,10 @@ padding: 7.5px;
 
 	position: relative;
 
-	max-width: 560px;
 	width: 100%;
+
+	margin-right: auto;
+    margin-left: auto;
 
 	background-image: url(../images/raspberry.jpg);
 	background-size: cover;
@@ -536,8 +538,10 @@ padding: 7.5px;
 	
 	border-radius: 30px;
 
-	max-width: 560px;
 	width: 100%;
+
+	margin-right: auto;
+    margin-left: auto;
 
 	background-image: url(../images/chocolate.jpg);
 	background-size: cover;
@@ -657,7 +661,7 @@ padding: 7.5px;
 .about-us h3{
 	font-family: 'Roboto medium', sans-serif;
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 30px;
 		
     padding: 23px 0 0 0;
@@ -690,7 +694,7 @@ padding: 7.5px;
 	margin: 0 32px 20px 0;
 
 	font-size: 10px;
-    font-weight: 400;
+    font-weight: 600;
 	line-height: 22px;
 
 	padding-left: 56px;
@@ -813,7 +817,6 @@ padding: 7.5px;
 
 	margin-bottom: 20px;
 
-	max-width: 560px;
 	width: 100%;
 
 	background-image: url(../images/strowberry.jpg);
@@ -841,7 +844,6 @@ padding: 7.5px;
 .sending-form {
 	border-radius: 30px;
 
-	max-width: 560px;
 	width: 100%;
 
 
@@ -858,7 +860,6 @@ padding: 7.5px;
 
 	background-color: #f8f7f4;
 
-	max-width: 550px;
 	
 	color: #000;
 
@@ -904,9 +905,7 @@ padding: 7.5px;
 
 	background-image: url(../images/map.jpg);
 	background-size: cover;
- 	background-position: center;
-
-
+	background-position: inherit;
 }
 
 .contacts-conteiner {
@@ -922,7 +921,9 @@ padding: 7.5px;
 	height: 305px;
 
 	bottom: 62px;
-    right: 26px;
+	right: 26px;
+	
+	display: none;
 }
 
 .contacts-conteiner a {
@@ -951,8 +952,15 @@ padding: 7.5px;
 
 .footer{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
+.footer-social {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .footer-social-item {
 
@@ -960,7 +968,8 @@ padding: 7.5px;
 	justify-content: space-between;
 
 	padding: 0;
-	margin-left: 28px;
+	margin: 16px 0 0 0;
+
 
 	width: 179px;
 	height: 40px;
@@ -988,6 +997,9 @@ padding: 7.5px;
 
 .footer-social-document {
 	max-width: 330px;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .footer-social-document-item a{
@@ -1347,12 +1359,43 @@ padding: 7.5px;
 
 	.about-us h3{	
 		font-size: 20px;
-		font-weight: 400;
+		font-weight: 600;
 		line-height: 30px;
 	}
 
 	.about-us-list {
 		font-size: 16px;
+		font-weight: 600;
+	}
+
+	.action-form {
+		flex-wrap: nowrap;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+
+	.action-form .button {
+		margin: 0 0 20px auto;
+	}
+
+	.contacts-conteiner {
+		display: block;
+	}
+
+	.contacts {
+		background-position: center;
+	}
+
+	.footer-social {
+		margin: 0;
+	}
+
+	.footer-social-item {
+		margin-left: 28px;
+	}
+
+	.footer-social-document {
+		margin: 0;
 	}
 }
 
@@ -1367,7 +1410,13 @@ padding: 7.5px;
 
 	.sale-rospberry{ 
 		margin-bottom: 0;
+		max-width: 560px;
 	}
+	
+	.sale-chocolate{
+		max-width: 560px;
+	}
+	
 
 	.best-product-list {	
 		margin-right: 26px;
@@ -1382,14 +1431,12 @@ padding: 7.5px;
 
 	.social-blog{
 		margin-bottom: 0;
-	}
-	.sending-form-in {
-		height: 210px;
+		max-width: 560px;
 	}
 
-	.action-form {
-		flex-wrap: nowrap;
-		height: 45px;	
+	.sending-form-in {
+		height: 210px;
+		max-width: 550px;
 	}
 
 	.mail {
