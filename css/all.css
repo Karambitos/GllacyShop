@@ -83,8 +83,6 @@ a {
 	font-size: 16px;
     line-height: 18px;
     color: #fff;	
-
-    position: absolute;
 	
 	margin: 0 27px 0 27px;
 	padding: 0;
@@ -330,8 +328,8 @@ padding: 7.5px;
 .background-picture-list {
 
 	/* margin: 0 27px; */
-	background: rgba(225, 245, 55, 0.4);
-	box-shadow: 0 0 0 3px rgb(234, 45, 82);
+	/* background: rgba(225, 245, 55, 0.4);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82); */
 }
 
 .background-picture-list a{
@@ -350,25 +348,26 @@ padding: 7.5px;
 .promo-description-wrapper {
     position: relative;
     top: -488px;
-    display: flex;
+   
     flex-direction: column;
 	align-items: center;
+	display: flex;
 
 }
+
 
 
 .promo-description-wrapper p {
-    font-size: 58px;
-    font-weight: 700;
-    line-height: 60.35px;
-    text-align: center;
-
-    max-width: 700px;
-
-    margin: 0;
-    padding: 0;
-    margin-bottom: 30px;  
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 31.35px;
+	text-align: center;
+	max-width: 700px;
+	padding: 0;
+	margin-bottom: 15px;
+	margin-top: 370px;
 }
+
 
 .main-button {
 	width: 284px;
@@ -388,7 +387,9 @@ padding: 7.5px;
 	top: 585px;
     left: 145px;
 
-    position: absolute;
+	position: absolute;
+	
+	display: none;
 }
 
 .swipe-list {
@@ -1346,16 +1347,19 @@ padding: 7.5px;
 
 /* для ширины экрана от 320px */
 @media (min-width: 320px){
-    /* .navigation  {
-        display: none;
-        width: 1146px;	
-	} */
-
-	
+	/* .best-product-list {
+		margin-right: 26px;
+	}	 */
 }
 
 /* для ширины экрана от 680px */
 @media (min-width: 680px){
+
+	.promo-description-wrapper p {
+		font-size: 30px;
+		margin-top: 315px;
+	}
+
 
 	.about-us h3{	
 		font-size: 20px;
@@ -1399,13 +1403,30 @@ padding: 7.5px;
 	}
 }
 
-/* для ширины экрана от 1174ppx */
-@media (min-width: 1174px){
+/* для ширины экрана от 1024ppx */
+@media (min-width: 1023px){
     .navigation  {
+		position: absolute;
 		width: 1146px;
 	}
 	.navigation div{
 		display: flex;
+	}
+
+	.promo-description-wrapper p {
+		font-size: 58px;
+		line-height: 60.35px;
+		margin-top: 0;  
+		margin-bottom: 30px;  
+		}
+
+
+	.swipe {
+		display: block;
+	}
+
+	.sale {
+		flex-wrap: nowrap;
 	}
 
 	.sale-rospberry{ 
@@ -1416,9 +1437,8 @@ padding: 7.5px;
 	.sale-chocolate{
 		max-width: 560px;
 	}
-	
 
-	.best-product-list {	
+	.best-product-list {
 		margin-right: 26px;
 	}	
 	.best-product-list:nth-child(4n){
@@ -1427,6 +1447,10 @@ padding: 7.5px;
 
 	.about-us h3{	
 		font-size: 24px;
+	}
+
+	.social{
+		flex-wrap: nowrap;
 	}
 
 	.social-blog{
