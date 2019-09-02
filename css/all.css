@@ -1,3 +1,5 @@
+
+ 
  body {
     margin: 0 auto;
  	padding: 0;
@@ -45,10 +47,14 @@
     
     border: none;
     border-radius: 50px;
-    background-image: linear-gradient(to top, #e74a35, #f26843);
-    box-shadow: 0 1px 2px 0 rgba(172, 16, 0, .64);
-
+    
 	text-shadow: 0 2px 5px #a0200b;
+	
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+    opacity: 0.99;
+
 }
 
 .button:hover,
@@ -300,12 +306,16 @@ padding: 7.5px;
 
 .background-picture {
 	
-	background: rgba(225, 245, 55, 0.4);
-	box-shadow: 0 0 0 3px rgb(234, 45, 82);
+	/* background: rgba(225, 245, 55, 0.4);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82); */
 }
 
 .background-picture-list img{
-	width: 90%
+	width: 90%;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -319,9 +329,9 @@ padding: 7.5px;
 }
 .background-picture-list {
 
-	margin: 0 27px;
-/*	background: rgba(225, 245, 55, 0.4);
-	box-shadow: 0 0 0 3px rgb(234, 45, 82);*/
+	/* margin: 0 27px; */
+	background: rgba(225, 245, 55, 0.4);
+	box-shadow: 0 0 0 3px rgb(234, 45, 82);
 }
 
 .background-picture-list a{
@@ -342,7 +352,8 @@ padding: 7.5px;
     top: -488px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+	align-items: center;
+
 }
 
 
@@ -487,12 +498,13 @@ padding: 7.5px;
 	position: relative;
 
 	max-width: 560px;
-	height: 232px;
 	width: 100%;
 
 	background-image: url(../images/raspberry.jpg);
 	background-size: cover;
- 	background-position: center;
+	background-position: center;
+	 
+	margin-bottom: 20px;
 }
 
 .sale-rospberry h3{
@@ -507,14 +519,15 @@ padding: 7.5px;
 .sale-rospberry p{
 
     padding: 20px 0 0 20px;
-    margin: 0;
+    margin: 0 0 40px 0;
 }
 
 .sale-rospberry .button {
-	position: absolute;	
+	width: 165px;
+
+	margin: 0 22px 22px auto;
 	
-	bottom: 22px;
-	right: 22px;
+	text-align: center;
 }
 
 
@@ -524,7 +537,6 @@ padding: 7.5px;
 	border-radius: 30px;
 
 	max-width: 560px;
-	height: 232px;
 	width: 100%;
 
 	background-image: url(../images/chocolate.jpg);
@@ -544,14 +556,15 @@ padding: 7.5px;
 .sale-chocolate p{
 
     padding: 20px 0 0 20px;
-    margin: 0;
+    margin: 0 0 40px 0;
 }
 
 .sale-chocolate .button {
-	position: absolute;	
+	width: 189px;
+
+	margin: 0 22px 22px auto;
 	
-	bottom: 22px;
-	right: 22px;
+	text-align: center;
 }
 
 
@@ -610,8 +623,10 @@ padding: 7.5px;
 	width: 267px;
 	min-height: 335px;
 	
-	margin-right: 26px;
 	position: relative;
+
+	margin-right: auto;
+    margin-left: auto;
 }	
 
 .best-product-list:before {
@@ -625,10 +640,6 @@ padding: 7.5px;
 
  	width: 62px;
  	height: 62px;
-}
-
-.best-product-list:nth-child(4n){
-	margin-right: 0;
 }
 
 .best-product-list img {
@@ -645,9 +656,10 @@ padding: 7.5px;
 /*													ПРО МАГАЗИН */
 .about-us h3{
 	font-family: 'Roboto medium', sans-serif;
-    font-size: 24px medium;
-    line-height: 30px;
-	
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 30px;
+		
     padding: 23px 0 0 0;
     margin: 22px;
 }
@@ -677,8 +689,9 @@ padding: 7.5px;
 	max-width: 478px;
 	margin: 0 32px 20px 0;
 
-	font-size: 16px;
-    line-height: 22px;
+	font-size: 10px;
+    font-weight: 400;
+	line-height: 22px;
 
 	padding-left: 56px;
 
@@ -799,7 +812,6 @@ padding: 7.5px;
 	color: #000;
 
 	max-width: 560px;
-	height: 232px;
 	width: 100%;
 
 	background-image: url(../images/strowberry.jpg);
@@ -808,7 +820,7 @@ padding: 7.5px;
 }
 
 .social-blog p{
-	width: 282px;
+	max-width: 282px;
 	height: 175px;
 
 	font-size: 16px;
@@ -828,7 +840,6 @@ padding: 7.5px;
 	border-radius: 30px;
 
 	max-width: 560px;
-	height: 232px;
 	width: 100%;
 
 
@@ -846,8 +857,7 @@ padding: 7.5px;
 	background-color: #f8f7f4;
 
 	max-width: 550px;
-	height: 209px;
-
+	
 	color: #000;
 
 	box-sizing: border-box;
@@ -862,21 +872,23 @@ padding: 7.5px;
 }
 .action-form {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	max-width: 509px;
-	height: 45px;
 }
 
 .mail {
-	max-width: 349px; 
 	height: 43px;
 	width: 100%;
 
+	margin: 0 20px 10px 20px;
+	padding-left: 15px;
+
 	border: 1px solid rgba(178, 178, 178, .52);
     border-radius: 5px;
-
-	margin: 0 10px 0 20px;
-	padding-left: 15px;
+}
+.action-form .button {
+	margin: 10px auto;
 }
 
 
@@ -1330,15 +1342,20 @@ padding: 7.5px;
 
 /* для ширины экрана от 680px */
 @media (min-width: 680px){
-    /* .navigation  {
-        display: none;
-        width: 1146px;	
-	} */
-	
+
+	.about-us h3{	
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	.about-us-list {
+		font-size: 16px;
+	}
 }
 
-/* для ширины экрана от 1200px */
-@media (min-width: 1100px){
+/* для ширины экрана от 1174ppx */
+@media (min-width: 1174px){
     .navigation  {
 		width: 1146px;
 	}
@@ -1346,8 +1363,41 @@ padding: 7.5px;
 		display: flex;
 	}
 
-	.background-picture-list {
-		/* width: 1045px; 
-		height: 881px; */
+	.sale-rospberry{ 
+		margin-bottom: 0;
 	}
+
+	.best-product-list {	
+		margin-right: 26px;
+	}	
+	.best-product-list:nth-child(4n){
+		margin-right: 0;
+	}
+
+	.about-us h3{	
+		font-size: 24px;
+	}
+
+	.sending-form-in {
+		height: 210px;
+	}
+
+	.action-form {
+		flex-wrap: nowrap;
+		height: 45px;	
+	}
+
+	.mail {
+		margin: 0 10px 0 20px;
+		max-width: 349px; 
+	}
+
+	.action-form .button {
+		height: 46px;
+	}
+
+	.action-form .button {
+		margin: 0;
+	}
+	
 }
