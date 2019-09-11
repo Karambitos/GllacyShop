@@ -1,6 +1,5 @@
-
  
- body {
+body {
     margin: 0 auto;
  	padding: 0;
 
@@ -71,6 +70,9 @@ a {
 }
 
 /*												HEADER*/
+.main-header-logo {
+	
+}
 
 .user-navigation-conteiner {
 	flex-direction: column;
@@ -84,7 +86,7 @@ a {
     line-height: 18px;
     color: #fff;	
 	
-	margin: 0 27px 0 27px;
+	/* margin: 0 27px 0 27px; */
 	padding: 0;
 
 
@@ -616,7 +618,9 @@ padding: 7.5px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	margin: 0;
+	max-width: 600px;
+    margin-right: auto;
+	margin-left: auto;
 	padding: 0;
 }
 
@@ -1319,20 +1323,9 @@ padding: 7.5px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .modal-show {
 	display: block;
+	z-index: 1;
 }	
 
 	/*наведение и фокус на слайдер?*/
@@ -1407,7 +1400,6 @@ padding: 7.5px;
 @media (min-width: 1023px){
     .navigation  {
 		position: absolute;
-		width: 1146px;
 	}
 	.navigation div{
 		display: flex;
@@ -1481,3 +1473,17 @@ padding: 7.5px;
 	}
 	
 }
+/* для ширины экрана от 1146px; */
+@media (min-width: 1146px){
+    .navigation  {
+		position: absolute;
+		width: 1146px;
+	}
+
+	.best-product-item {
+		margin: 0;
+		padding: 0;
+		
+		max-width: 1146px;
+	}
+	
