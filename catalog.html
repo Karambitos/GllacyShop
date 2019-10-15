@@ -9,40 +9,41 @@
 </head>
 <body>
 	<header>
-		<div class="conteiner">
-  			<nav class="navigation">
-				  		<a href="#" class="main-header-logo"><img src="images/Logo.svg" width="155" height="65" alt="Логотип Gllacy Shop"></a>
-				<div class="navigation-conteiner">
+		
+  			<nav class="main-navigation">
+				    <div class="box-logo"><a href="#" class="main-header-logo"><img src="images/Logo.svg" width="155" height="65" alt="Логотип Gllacy Shop"></a>
+					</div>	
+				<div class="box-site-navigation">
 					<ul class="site-navigation">
-				  		<li class="site-navigation-list catalog"><a class="JScatalog" href="#"><b>Каталог</b></a>
+				  		<li class="site-navigation__list"><a class="JScatalog" href="#"><b>Каталог</b></a>
 					  		<div class="modal-catalog">
-					  			<ul class="modal-catalog-list">
-					  				<li class="modal-catalog-item catalog-new">
+					  			<ul class="modal-catalog__list">
+					  				<li class="modal-catalog__item">
 					  					<a href=""><b>Новинки</b></a>
 					  				</li>
-					  				<li class="modal-catalog-item catalog-alse">
+					  				<li class="modal-catalog__item">
 					  					<a href="">Сливочное</a>
 					  				</li>
-					  				<li class="modal-catalog-item catalog-alse">
+					  				<li class="modal-catalog__item">
 					  					<a href="">Щербеты</a>
 					  				</li>
-					  				<li class="modal-catalog-item catalog-alse">
+					  				<li class="modal-catalog__item">
 					  					<a href="">Фруктовый лед</a>
 					  				</li>
-					  				<li class="modal-catalog-item catalog-alse">
+					  				<li class="modal-catalog__item">
 					  					<a href="">Мелорин</a>
 					  				</li>
 					  			</ul>
 							</div>
 						</li>
-				  		<li class="site-navigation-list delivery"><a href="#"><b>Доставка  и оплата</b></a></li>
-				  		<li class="site-navigation-list navigation-about-us"><a href="#"><b>О компании</b></a></li>
+				  		<li class="site-navigation__list delivery"><a href="#"><b>Доставка  и оплата</b></a></li>
+				  		<li class="site-navigation__list about--us"><a href="#"><b>О компании</b></a></li>
 				  	</ul>
 				</div>  
-				<div class="user-navigation-conteiner">
+				<div class="box-user-navigation">
 				  	<ul class="user-navigation">
-				  		<li class="shoping-search">
-					  		<a class="search user-button" href="#"><span class="visually-hidden">Поиск </span>
+				  		<li class="user-navigation__shoping-list">
+					  		<a class="search user-button" href="#"><span class="visually-hidden"></span>
 					  			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="7px" y="7px" width="17px"
 								 height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
 								<g id="Layer_2">
@@ -51,14 +52,14 @@
 										S11,4.019,11,6.5S8.981,11,6.5,11z"/>
 								</g>
 								</svg>
-							<form class="search-conteiner">
+							<form class="shoping-list__search-conteiner">
 								<label>
 									<input class="input-search" type="search" name="search" placeholder="Что ищем?">
 								</label>
 							</form>
 							</a>
 				  		</li>
-				  		<li class="login-link-list">
+				  		<li class="user-navigation__login-link-list">
 				  			<a class="login-link user-button" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
 							<g>
@@ -67,7 +68,7 @@
 								/>
 							</g>
 							</svg>Вход</a>	
-						<form class="action-privat visually-hidden1" action="https://echo.htmlacademy.ru" method="post">
+						<form class="action-privat" action="https://echo.htmlacademy.ru" method="post">
 							<div class="action-input">
 								<label for="action-email" class="visually-hidden">Электронная почта</label>
 								<input class="email" id="action-email" type="email" name="login" placeholder="Электронная почта">
@@ -88,7 +89,7 @@
 							</div>
 						</form>
 				  		</li>
-				  		<li class="shoping-bag-list">
+				  		<li class="user-navigation__shoping-bag-list">
 				  		<a class="shoping-bag user-button" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
 						<g>
@@ -98,25 +99,27 @@
 							<circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
 						</g>
 						</svg>Пусто</a>
-						<fieldset class="shoping-bag-modal visually-hidden">
-							<ul class="shoping-modal-list">
-								<li class="shoping-modal-title">
+						<fieldset class="shoping-bag__modal">
+							<ul class="shoping-bag__list">
+								<li class="shoping-bag__title">
 									<p>Пломбир с апельсиновым джемом 1,5 кг х <span>200 руб.</span>300 руб.</p>	
 								</li>
-								<li class="shoping-modal-title">
+								<li class="shoping-bag__title">
 									<p>Клубничный пломбир с присыпкой из белого шоколада 1,5 кг <span>х 300 руб.</span>450 руб.</p>	
 								</li>
 							</ul>
 						</fieldset> 
 				  		</li>
-				  	</ul>  
+					 </ul>  
+				</div>
+				<div class="box-time-work">
 					<b class="header-contacts exile">
 						С 10 до 20, ежедневно<br>
 						<span><a href="#">8 812 450-25-25</a></span>
 					</b>
-				</div>	
+				</div>
   			</nav> 
-  		</div> 
+  		
 	</header>
 		<main class="catalog-conteiner">
 				<section class="parametr-section">
@@ -172,8 +175,8 @@
 				
 	</main>
 	<footer class="footer">
-					<div class="footer-social">
-									<!-- Твитер -->
+					<div class="footer-social"> -->
+									<!-- Твитер
 						<ul class="footer-social-item">
 						<li class="footer-social-list"><a class="social-button" href="twitter.com" alt="Твитер"><span class="visually-hidden">Твитер</span>
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
